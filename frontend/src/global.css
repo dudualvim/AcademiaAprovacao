@@ -1,0 +1,157 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+@import 'swiper/swiper-bundle.css';
+
+
+
+body {
+  margin: 0;
+  font-family: "Inter", Sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.blue{
+  color: #0084ff;
+}
+
+.title {
+  color: #0084ff; /* Cor do texto */
+  position: relative; /* Para permitir posicionar o ::before relativo ao elemento */
+  font-size: 40px;
+  font-weight: 700;
+}
+
+
+.line {
+  width: 40%; /* Largura da linha */
+  height: 5px; /* Espessura da linha */
+  background-color: #0084ff; /* Cor da linha */
+  opacity: 0.5; /* Opacidade reduzida */
+  border-radius: 10px; /* Linha arredondada */
+  margin-bottom: 20px; /* Espaço abaixo da linha */
+}
+
+
+/* styles botão */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.pulsating-button {
+  animation: pulse 1.5s infinite;
+  background-image: linear-gradient(40deg, #0052FF, #0087FF, #70BCFF);
+  transition: all .2s ease-in-out;
+}
+
+
+.shadow-custom {
+  box-shadow: 0px 0px 31px 0px rgba(0, 0, 0, 0.45);
+}
+
+.forWhoh2{
+  color: #3A5A85;
+  font-family: "Jost", Sans-serif;
+}
+
+.Mentorsh2{
+  color: #3A5A85;
+  font-family: "Jost", Sans-serif;
+  border: 1px solid; /* Define a borda inferior */
+  border-color: currentColor; /* Define a cor da borda como a cor do texto */
+  padding: 4px 50px; /* Espaço entre o texto e a borda */
+  display: inline-block; /* Faz o elemento ter largura ajustável */
+  align-items: center;
+  border-radius: 100px;
+}
+
+
+.mySwiper {
+  height: 400px;
+  width: 350px;
+}
+
+
+.card-container {
+  height: 400px;
+  width: 350px;
+  padding: 2rem;
+  border-radius: 16px;
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: 0.2s;
+  border: 1px solid #0084ff; /* Borda azul fina */
+}
+
+
+.number-box {
+  background-color: #0084ff;
+  color: #ffffff;
+  width: 50px; /* Aumentar o tamanho da caixa */
+  height: 50px; /* Aumentar o tamanho da caixa */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem; /* Aumentar o tamanho do número */
+  border-radius: 8px; /* Deixar as bordas um pouco mais arredondadas */
+  margin-bottom: 20px;
+}
+
+
+.benefits-section {
+  background-color: #f9f9f9;
+}
+
+.benefit-card {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  height: 250px;
+  width: 310px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centraliza verticalmente */
+  align-items: center; /* Centraliza horizontalmente */
+}
+
+.benefit-card img {
+  width: 84px; /* Ajusta o tamanho da imagem */
+  height: 84px; /* Ajusta o tamanho da imagem */
+  margin-bottom: 1.2rem; /* Espaço entre a imagem e o texto */
+}
+
+.benefit-card p {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #333;
+  margin-top: 0.5rem;
+}
+
+@layer utilities {
+  .shadow-blue-glow {
+    box-shadow: 0 10px 15px -3px rgba(59, 130, 246, 0.5), 0 4px 6px -2px rgba(59, 130, 246, 0.25);
+  }
+}
+
